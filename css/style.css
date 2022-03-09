@@ -29,6 +29,34 @@ header .parallax-container .container p{
     font-size: 18px;
     
 }
+header .toggle{
+    display: flex;
+    align-items: center;
+}
+header .toggle .dark_circle{
+    width:24px;
+    height: 15px;
+    background-color: #aeaaea;
+    border-radius: 25%;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    padding: 1px;
+    cursor: pointer;
+}
+header .toggle .dark_circle .dark_tombol{
+    width:15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 100%;    
+}
+#toggle:checked ~ label div.dark_tombol{
+    transform: translateX(50%);
+}
+.dark{
+    background-color: #0f0e0e;
+    color: #ffffff;
+}
 article .container p{
     text-align: justify;
     margin: 10px 0;
